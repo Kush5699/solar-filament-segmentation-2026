@@ -1,0 +1,72 @@
+# Model Checkpoints & Weights
+*.pth
+*.pt
+*.bin
+*.onnx
+*.safetensors
+
+# Kaggle / MAGFiLO Datasets & Archives
+*.zip
+*.tar
+*.tar.gz
+filament-segmentation-2026/
+train_images/
+test_images/
+*.json
+!configs/*.json
+
+# Data and Predictions (CSV)
+*.csv
+!sample_data/*.csv
+
+# Python Cache & Virtual Environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# Scratch & Intermediate Experiment Files
+scratch/
+*_dump.txt
+Google_Form_Submission_Answers.txt
+Description_Kaggle Competition.txt
+
+# Loose root experiment scripts (modularized into src/ and scripts/)
+/IEEE_BigData_Technical_Report.tex
+/LeaderBoard-Ranking.png
+build_*.py
+rank1_*.py
+kaggle_*.py
+solar_filament_*.py
+train_and_infer_kaggle.ipynb
+solar-filament-*.ipynb
+self-evaluation-notebook.ipynb
+kaggle_sota_055_pipeline.ipynb
+solar_filament_breakthrough_sota.ipynb
+solar_filament_causal_breakthrough.ipynb
+solar_filament_deep_learning_*.ipynb
+solar_filament_hybrid_sota.ipynb
+solar_filament_maskrcnn_pipeline.ipynb
+solar_filament_native_resolution_unet.ipynb
+solar_filament_rank1_champion_solution.ipynb
+solar_filament_rank1_fusion_pipeline.ipynb
+solar_filament_sota_champion_070.ipynb
+solar_filament_standalone_sota_model.ipynb
+solar_filament_target_072_optimal.ipynb
+solar_filament_watershed_pipeline.ipynb
+solar_filament_breakthrough_standalone.ipynb
+
+# OS / Editor Artifacts
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
