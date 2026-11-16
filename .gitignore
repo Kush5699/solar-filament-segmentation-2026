@@ -43,6 +43,7 @@ Description_Kaggle Competition.txt
 # Loose root experiment scripts (modularized into src/ and scripts/)
 /IEEE_BigData_Technical_Report.tex
 /LeaderBoard-Ranking.png
+/SolarFilament_Report.pdf
 build_*.py
 rank1_*.py
 kaggle_*.py

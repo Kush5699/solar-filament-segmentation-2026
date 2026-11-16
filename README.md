@@ -102,7 +102,8 @@ The MAGFiLO benchmark contains annotations from multiple solar physicists with d
 │   ├── 01_solution_reproduction.ipynb  # End-to-end reproducible Rank 6 solution notebook
 │   └── 02_cs_filamentnet_standalone_training.ipynb # Standalone CS-FilamentNet training
 ├── report/
-│   └── IEEE_BigData_Technical_Report.tex # Official 4-page IEEE BigData technical report
+│   ├── IEEE_BigData_Technical_Report.tex # Official 4-page IEEE BigData technical report
+│   └── SolarFilament_Report.pdf          # Compiled 4-page technical report PDF
 ├── scripts/
 │   ├── train.py                        # CLI script to train CS-FilamentNet from scratch
 │   └── predict.py                      # CLI script to run full-disk inference and generate RLE
@@ -202,7 +203,7 @@ If you find this work or codebase helpful in your research, please cite our tech
 }
 ```
 
-The full 4-page LaTeX source is available in [report/IEEE_BigData_Technical_Report.tex](report/IEEE_BigData_Technical_Report.tex).
+The compiled 4-page PDF report is available in [report/SolarFilament_Report.pdf](report/SolarFilament_Report.pdf), with the corresponding LaTeX source in [report/IEEE_BigData_Technical_Report.tex](report/IEEE_BigData_Technical_Report.tex).
 
 ---
 
