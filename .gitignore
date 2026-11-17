@@ -4,6 +4,8 @@
 *.bin
 *.onnx
 *.safetensors
+!weights/*.pth
+/best_filament_model.pth
 
 # Kaggle / MAGFiLO Datasets & Archives
 *.zip

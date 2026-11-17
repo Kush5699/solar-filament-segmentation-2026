@@ -18,7 +18,7 @@ from src.consensus import MultiAnnotatorConsensusEngine
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Run Full-Disk Inference on Test Observations")
-    parser.add_argument("--weights", type=str, required=True, help="Path to trained CS-FilamentNet checkpoint (.pth)")
+    parser.add_argument("--weights", type=str, default="weights/best_filament_model.pth", help="Path to trained CS-FilamentNet checkpoint (.pth)")
     parser.add_argument("--test_images", type=str, required=True, help="Directory containing full-disk test images")
     parser.add_argument("--output", type=str, default="submission.csv", help="Path to output submission CSV")
     parser.add_argument("--patch_size", type=int, default=512, help="Patch size for sliding window")

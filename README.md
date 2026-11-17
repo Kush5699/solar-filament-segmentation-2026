@@ -114,6 +114,10 @@ The MAGFiLO benchmark contains annotations from multiple solar physicists with d
 │   ├── inference.py                    # 2D Gaussian sliding window blending, TTA & RLE
 │   ├── losses.py                       # Compound Focal Tversky and Soft Dice loss functions
 │   └── models.py                       # CS-FilamentNet architecture with MDSC bottleneck
+├── weights/
+│   ├── README.md                       # Model inventory and architecture documentation
+│   ├── best_filament_model.pth         # Primary CS-FilamentNet weights (81.3 MB, 0.61 Private PQ)
+│   └── baseline_unet_036.pth           # Baseline U-Net weights (7.39 MB, 0.36 Public PQ)
 ├── .gitignore                          # Clean git ignore configuration
 ├── LICENSE                             # MIT License
 ├── README.md                           # Comprehensive project documentation
@@ -158,11 +162,11 @@ python scripts/train.py \
     --lr 0.001
 ```
 
-### 2. Full-Disk Inference
-To run sliding-window inference on test observations and generate a Kaggle-compliant RLE submission file:
+### 2. Full-Disk Inference (Using Pretrained Weights)
+To run sliding-window inference on test observations using the included pretrained weights:
 ```bash
 python scripts/predict.py \
-    --weights checkpoints/best_cs_filamentnet.pth \
+    --weights weights/best_filament_model.pth \
     --test_images /path/to/test_images \
     --output submission.csv \
     --patch_size 512 \
